@@ -15,11 +15,9 @@ namespace DevDynamo.Models
             Status = status;
             //ProjectId = projectId;
         }
-
-        public int Id { get; set; }
-
-        [Required]
+        public Ticket() { }
         public Guid ProjectId { get; set; }
+        public int Id { get; set; }
 
         [StringLength(100)]
         public string Title { get; set; } = null!;
